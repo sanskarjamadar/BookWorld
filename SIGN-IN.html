@@ -1,0 +1,137 @@
+<html>
+<head>
+  <title>Registration and Sign-up Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript">
+function formValidation()
+{
+var valid=true;
+var p_valid=0;
+var cp_valid=0;
+var un_valid=0;
+var email_valid=0;
+
+if (document.rform.un.value=="")
+{
+alert("Please enter your name in 'Username' box!");
+valid=false;
+}
+else if((document.rform.un.value.length<=3) || (document.rform.un.value.length>=20))
+{
+alert("Username length must be between 3 and 20 character!");
+valid=false;
+}
+else
+{
+un_valid=1;
+}
+
+if (document.rform.email.value=="")
+{
+alert("Please enter your email-id in 'Email-Id' box!");
+valid=false;
+}
+else
+{
+email_valid=1;
+}
+
+
+if (document.rform.p.value=="")
+{
+alert("Please enter your password in 'Password' box!");
+valid=false;
+}
+else if ((document.rform.p.value.length<8) || (document.rform.p.value.length>15))
+{
+alert("Password length should be between 8 - 15 characters!\nPlease re-enter your password in 'Password' box!");
+document.rform.p.value="";
+valid=false;
+}
+else
+{
+p_valid=1;
+}
+
+if (document.rform.cp.value=="")
+{
+alert("Please re-enter your password in 'Confirm Password' box!");
+valid=false;
+}
+else if ((document.rform.cp.value.length<8)||(document.rform.cp.value.length>15))
+{
+alert("Password length should be between 8 - 15 characters!\nPlease re-enter your password in 'Confirm Password' box!");
+document.rform.cp.value="";
+valid=false;
+}
+else
+{
+cp_valid=1;
+}
+
+if ((p_valid==1)&&(cp_valid==1)&&(un_valid==1)&&(email_valid==1))
+{
+if (document.rform.p.value!=document.rform.cp.value)
+{
+alert("Password Incorrect!\nThe password entered in the 'Confirm Password' box doesn't match to the password entered in the 'Password' box!\nPlease re-enter the correct password in the 'Confirm Password' box!");
+document.rform.cp.value="";
+valid=false;
+}
+else
+{
+alert("You are registered successfully!!!");
+}
+}
+if (document.rform.p.value=="")
+{
+document.rform.cp.value="";
+valid=false;
+}
+return valid;
+}
+</script>
+</head>
+<body>
+<div class="Navbar">
+<div align="center">
+<a href="index.html">HOME</a>     <a href="Booking.html">BOOKING</a>     <a href="About.html">ABOUT US</a>     <a href="Contact Us.html">CONTACT US</a>     <a href="SIGN-IN.html">SIGN-IN</a>
+</div>
+</div>
+
+<hr>
+  <div class="header">
+  	<h2>Sign-In</h2>
+  </div>
+
+  <form name="rform" action="sign_in.asp" method="post" onsubmit="return formValidation();">
+
+  <div class="input-group">
+    <label><b> Username </b> </label>
+    <input type="text" name="un">
+  </div>
+  <div class="input-group">
+  	  <label><b> Email </b> </label>
+  	  <input type="email" name="email">
+  </div>
+  <div class="input-group">
+     <label><b> Password </b></label>
+     <input type="password" name="p">
+  </div>
+  <div class="input-group">
+     <label><b> Confirm Password </b></label> 
+     <input type="password" name="cp">
+  </div>
+  <div class="input-group">
+  <button type="submit" class="btn" name="reg_user">Register</button>
+  </div>
+
+ </form>
+
+<br>
+<br>
+<div class="Navbar">
+<div align="center"><a href="Importance.html">&lt;&lt; Back</a> <a href="History.html">1</a> <a href="Literature.html">2</a> <a href="Introduction.html">3</a> <a href="Meaning.html">4</a> <a href="Importance.html">5</a> <a href="Advantage.html">6</a> <a href="Types.html">7</a> <a href="Writers.html">8</a> <a href="Top.html">9</a> <a href="Ebook.html">10</a> 
+</div> 
+</body>
+</html>

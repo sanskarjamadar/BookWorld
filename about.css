@@ -1,0 +1,74 @@
+h1
+{
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+body
+{
+    background-image: url(Background.jpg);
+    background-size: cover;
+    background-position: center;
+  
+}
+
+p
+{
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+a
+{
+   color:white;
+   display:inline-block;
+   Padding:30px;
+   text-decoration:none;
+   
+}
+
+
+
+ul
+{
+    
+    list-style: square;
+    color: navys;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+    background-image: url("Home.jpg");background-size:cover;
+    
+}
+
+ul li:hover
+{
+    font-size: 28px;
+    cursor: pointer;
+    color: red;
+    text-decoration: none;
+}
+
+   
+a
+{
+   color:white;
+   display:inline-block;
+   Padding:30px;
+   background-color:black;
+   text-decoration:none;
+}
+
+
+.Navbar
+{
+ font-family:Arial;
+ background-color:red;
+}
+
+
+
+
+

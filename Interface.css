@@ -1,0 +1,40 @@
+body
+{
+    background-image: url(Interface.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+ul
+{
+    font-family: sans-serif;
+    font-size: 26px;
+    list-style: square;
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+}
+
+
+ul li:hover
+{
+    font-size: 28px;
+    cursor: pointer;
+    color: red;
+    text-decoration: none;
+}
+
+
+h1
+{
+    float: right;
+    margin-right: 950px;
+    font-family: 'Fjalla One', sans-serif;
+    color: red;}
+
+.Anchor
+{background-color: black;}
+
+#New
+{background-color:navy;
+}

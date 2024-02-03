@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<title>Booking Form</title>
+<style>
+body{background-image:url('Booking.jpg');}
+fieldset{background-image:url('Fieldset.jpg'); opacity:0.9;}
+h1{background-color:yellow; color:navy;}
+h2{color:red; font-family:Times New Roman; color:red;}
+.Navbar
+{
+ font-family:Arial;
+ background-color:red;
+}
+
+a
+{
+   color:white;
+   display:inline-block;
+   Padding:30px;
+   background-color:black;
+   text-decoration:none;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+        
+<div class="Navbar">
+<div align="center">
+<a href="index.html">HOME</a>     <a href="About.html">ABOUT US</a>     <a href="Contact Us.html">CONTACT US</a>     <a href="SIGN-IN.html">SIGN-IN</a>
+</div>
+</div>
+
+<hr>
+
+<form action="Action.html" method="post" name="Booking" autocomplete="on" novalidate>
+<center>
+<fieldset style="width:50%";>
+<legend><b><h1>Booking Form</h1></b></legend>
+<br>
+<b><h2>Name:</h2></b>
+       <input type="text" name="Name">
+<br>
+<br>
+<b><h2>Email ID:</h2></b>
+       <input type="text" name="Email">
+<br>
+<br>
+<b><h2>Date:</h2></b>
+      <input type="date" name="Date">
+<br>
+<br>
+<b><h2>Book Name:</h2></b>
+<input list="Book Name">
+<datalist id="Book Name">
+<option value="Wings of Fire">
+<option value="I have a dream">
+<option value="Three mistake of my life">
+<option value="Harry Potter">
+<option value="Sachin Tendulkar">
+<option value="Your Success">
+<option value="The Power of Positive Thinking">
+<option value="The Little Prince">
+<option value="New Moon">
+<option value="Your Success">
+</datalist>
+<br>
+<br>
+<b><h2>Price:</h2></b>
+<input list="Price">
+<datalist id="Price">
+<option value="500">
+<option value="700">
+<option value="850">
+<option value="1000">
+<option value="1250">
+</datalist>
+<br>
+<br>
+<input type="submit" value="Order">
+<input type="reset" value="Reset">
+
+</center>
+</fieldset>
+</form>

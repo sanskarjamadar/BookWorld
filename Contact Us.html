@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>Contact Us</TITLE>
+<style>
+
+BODY{color: black;
+text-align:center
+}
+body
+{
+    background-image: url(book.jpg);
+    background-size: cover;
+    background-position: center;}
+header{color: white;}
+h1{color:cyan;font-family:fantasy;background-color:black;}
+h2{color:cyan;font-family:Times New Roman;background-color:black;}
+a
+{
+   color:white;
+   display:inline-block;
+   Padding:30px;
+   background-color:black;
+   text-decoration:none;
+}
+.Navbar
+{
+ font-family:Arial;
+ background-color:red;
+}
+
+</style>
+
+</HEAD>
+
+
+<BODY>
+        
+<div class="Navbar">
+<div align="center">
+<a href="index.html">HOME</a>     <a href="Booking.html">BOOKING</a>     <a href="About.html">ABOUT US</a>     <a href="SIGN-IN.html">SIGN-IN</a>
+</div>
+</div>
+
+<hr>
+
+<header><h1><b><u>Contact Us Form</u></b></h1></header>
+<br>
+<br>
+<br>
+<div align="center">
+<img src="Logo.png"; height=210px;></div>
+
+<div id="after_submit"></div>
+<form id="contact_form" action="Send Email.html" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name"><h3>Your name:</h3></label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="50" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email"><h3>Your email:</h3></label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="50" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message"><h3>Your message:</h3></label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="50"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
+<br>
+<br>
+<br>
+<h2><u>For any quaries call us on toll free number1800-1200-25 or fill the <b>Contact Us form</b> to get any sugessition for your problem regrading our website.</u></h2>
+<footer><h2><b>&copy; Book World</b></h2><footer>
+</body>
+</html>
+
